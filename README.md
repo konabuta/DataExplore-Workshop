@@ -4,7 +4,7 @@
 
 その中でも記述的分析・診断的分析 (※下記チャート参照)に属するデータ探索(要因探索、原因分析)は未だインデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くのユースケースがあります。
 
-<img src="./docs/images/analytics_steps.gif" width = 300>
+<img src="./docs/images/analytics_steps.gif" width = 400>
 
 <br/>
 
