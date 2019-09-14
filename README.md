@@ -1,28 +1,16 @@
 # DataExplore-Workshop
 
-ビッグデータの時代になり、データ分析のニーズが高まっています。BIツール・Excelによる可視化、機械学習による予測モデリングなどデータを扱うための様々なテクノロジーが生まれています。
-
-その中でも記述的分析・診断的分析 (※下記チャート) に属するデータ探索(要因探索、原因分析)は未だにデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くのユースケースがあります。
-
-<img src="./docs/images/analytics_steps.gif" width = 400>
-
-<br/>
-
-しかしながら、複雑・大量になっているデータに対する探索は非常に困難です。理由は下記の通りです。
-
-- 可視化はできているけど、結局データの関係性がわからない
-- 統計解析・機械学習のテクノロジーを導入するハードルが高い
-- モデルが複雑でビジネスできない、信用されない  
-etc
-
-本ワークショップでは、**診断的分析**にフォーカスして、**統計解析・機械学習によるデータ探索のアプローチ方法**をご紹介します。また Microsoftのテクノロジーを利用することで、効率的・簡単に分析プロセスを進めることを実感いただきます。
+[Dllab Engineers Days 2019 Handson Day1](https://dllab.connpass.com/event/144595/)  
+自動機械学習 AutoML & 要因探索 ハンズオン(Microsoft)
 
 # Agenda
-- Why ML/DL for Data Explore ?
-- Interpretable Algorithms
-- Model-Agnostic Methods
-- Microsoft Approach
-- Sample Code
-
+- **事前準備**
+- **Introduction**
+- **Handson**  
+    - **Automated Machine Learning**   
+    - **Interpretable Algorithms**   
+    - **Model-Agnostic Methods**   
+  
+-    
 
 # Reference
