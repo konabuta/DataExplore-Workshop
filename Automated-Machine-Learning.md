@@ -5,17 +5,12 @@
 - ビジネスユーザが機械学習モデリングができるようになる
 - 機械学習が企業に浸透する
 
-データ探索においても、データの特徴や関係性を理解する際に自動機械学習は有効な手段になります。
+データ探索においても、データの特徴や関係性を理解する際に利用する機械学習モデルを開発する手段として自動機械学習は有効です。
+
 
 # AutoML テクノロジー
-## Microsoft
-Automated Machine Learing
-
-## Google
-AutoML Vision
-
-## DataRobot
-
-## H2O
-
-## dotData
+* [Microsoft - Automated Machine Learing](https://azure.microsoft.com/ja-jp/services/machine-learning-service/)
+* [DataRobot](https://www.datarobot.com/jp/)
+* [Google - AutoML](https://cloud.google.com/automl/?hl=ja)
+* [H2O](https://www.h2o.ai/products/h2o-driverless-ai/)
+* [dotData](http://dotdata.jp/)
