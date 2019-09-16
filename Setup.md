@@ -47,7 +47,7 @@ Azure Machine Learning service は機械学習のモデル学習、デプロイ�
 <br/>
 
 **New Workspace Experience**  
-https://ml.azure.com/workspaceportal 
+https://ml.azure.com/workspaceportal   
 <img src="./docs/images/new-ws2.0.png" width=400> 
 
 <br/> 
