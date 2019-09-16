@@ -43,9 +43,7 @@ Azure Machine Learning service は機械学習のモデル学習、デプロイ�
 - Azure Machine Learning service ワークスペースの画面が表示されたら完了です。
 <img src="./docs/images/ws.png" width=400> 
 
-- また、プレビュー中（2019年9月現在）のワークスペース画面にも、下記リンクからアクセスできることを確認してください。    
-<br/>
-
+- また、プレビュー中（2019年9月現在）のワークスペース画面にも、下記リンクからアクセスできることを確認してください。  <br/>    
 **New Workspace Experience**  
 https://ml.azure.com/workspaceportal   
 <img src="./docs/images/new-ws2.0.png" width=400> 
