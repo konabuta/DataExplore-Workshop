@@ -19,6 +19,8 @@ etc
 
 また Microsoftのテクノロジーを利用することで、上記課題を解決し、効率的・簡単に分析プロセスを進めることを実感いただきます。
 
+<br/>
+
 ## 利用するテクノロジーの概要
  
 - **Automated Machine Learning**   
@@ -28,8 +30,15 @@ etc
 - **Model-Agnostic Methods** 
     - Black Box なモデルを解釈するためアプローチ方法。あらゆるモデルに対応可能な汎用的なモデル解釈フレームワーク。
 
+<br/>
+
 ## Microsoft Technology and Mapping
 今回利用するテクノロジーと Microsoft サービスについて下記て整理します。
 
+|   Category                   |  Microsoft Technology      |
+| -----------------------------| ---------------------------|
+|  Automated Machine Learning  |  1. Azure Machine Learning    |
+|  Interpretable Algorithms    |  1. Power BI - Key Influencers<br>2. Microsoft Interpret ML<br>3. Custom Python, R        |
+|  Model Agnostic Methods      |  1. Azure Machine Learning Interpretability SDK<br>2. Custom Python, R              |
 
 

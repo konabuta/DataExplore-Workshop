@@ -1,7 +1,13 @@
 # DataExplore-Workshop
+<br/>
 
-[Dllab Engineers Days 2019 Handson Day1](https://dllab.connpass.com/event/144595/)  
+<img src="docs/images/dllab.png" width=350>
+
+
+[Dllab Engineers Days 2019 Handson Day1](https://dllab.connpass.com/event/144595/)   
 自動機械学習 AutoML & 要因探索 ハンズオン(Microsoft)
+
+<br/>
 
 # Agenda
 - [事前準備](./Setup.md)
