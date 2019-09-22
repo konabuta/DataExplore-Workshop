@@ -5,9 +5,9 @@
 
 
 [Dllab Engineers Days 2019 Handson Day1](https://dllab.connpass.com/event/144595/)   
-自動機械学習 AutoML & 要因探索 ハンズオン(Microsoft)
+**自動機械学習 AutoML & 要因探索 ハンズオン(Microsoft)**
 
-<br/>
+
 
 # Agenda
 - [事前準備](./Setup.md)

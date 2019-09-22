@@ -7,6 +7,7 @@
     - ワークスペース
     - Notebook VM
     - Compute Target
+    - Python SDK 環境
 
 ## Power BI Deskop
 Power BI Desktop は無料で利用できる可視化ツールです。  
@@ -73,8 +74,77 @@ VMの種類やノードの設定を行います。下記画面を参考に選択
 
 <img src="./docs/images/aml-compute-list.png"><br/>
 
-## Azure Machine Learning Python SDK 環境
-### Notebook VM
+### Python SDK 環境
+#### Notebook VM
 
+Notebook VM は、 Azure Machine Learning service が提供するマネージドな Jupyter Notebook / Jupyter Lab 環境です。
 
-### ローカル PC の Python 環境
+自分の Notebook VM を作成する際は、左パネルの **Notebook VM**機能にアクセスし、**New**をクリックします。
+<img src="./docs/images/aml-nvm-list.png"><br/>
+
+任意の名称とVMのスペックを選択して、作成を開始します。
+<img src="./docs/images/aml-nvm-create.png"><br/>
+
+Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook を起動します。
+
+<img src="./docs/images/aml-nvm-created.png"><br/>
+
+#### ローカル PC の Python 環境
+
+1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html) もしくは [Anaconda](https://www.anaconda.com/distribution/) をインストールします。
+
+2. Anaconda Prompt を開いて、Pythonの myenv という名前の環境を作成します。
+
+```bash
+# New Conda
+conda create -n myenv Python=3.6
+# Activate 
+conda activate myenv
+```
+
+3. Azure Machine Learning service Python SDK をインストールします。
+```bash
+# Package Install
+pip install --upgrade azureml-sdk[notebooks,automl,explain,contrib] azureml-dataprep
+```
+
+4. Jupyter Notebook をインストールし、カーネルを有効化します。
+```bash
+# Install Jupyer Notebook
+conda install notebook ipykernel
+```
+
+```bash
+# Jupyter Kernel Attach
+python -m ipykernel install --user --name myenv --display-name myenv
+```
+```bash
+# Start Jupyter Notebook
+jupyter notebook
+```
+
+次の Python プログラムで正常に Azure Machine Learning service Python SDK がインポートできたか確認します。
+
+```python
+import azureml.core
+azureml.core.VERSION
+```
+
+### 本リポジトリのコードのインポート
+#### Notebook VM
+
+Jupyter Notebook の Terminal を開きます。自分の個人フォルダーに移動し、本リポジトリをクローンします。
+
+```bash
+cd <個人フォルダ>
+git clone https://github.com/konabuta/DataExplore-Workshop
+```
+#### ローカル PC の Python 環境
+
+下記のいずれかの方法でローカルPCにインポートします。
+
+* 作業フォルダにて、本リポジトリをクローン
+```bash
+git clone https://github.com/konabuta/DataExplore-Workshop
+```
+* [本リポジトリの Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、解凍する

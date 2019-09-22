@@ -2,15 +2,17 @@
 
 ### 1. Power BI - Key Influencers による要因探索 (30min)
 
-* [タイタニック号で生き残った乗船顧客の属性は？](Handson/Key-Influencers-titanic-survived.md')
-  - サンプル  : [titanic-sample.pbix](Sample/Key-Influencers/titanic-sample.pbix)
+- [タイタニック号で生き残った乗船顧客の属性は？](Handson/Key-Influencers-titanic-survived.md')
+- サンプル  : [titanic-sample.pbix](Sample/Key-Influencers/titanic-sample.pbix)
 
 ### 2. Automated ML UX によるノーコーディング自動機械学習 (30min)
 
-[品質管理における不良の予測](Handson/AutoML-UX-factory.md)
+- [品質管理における不良の予測](Handson/AutoML-UX-factory.md)
 
 
 ### 3. Automated ML Python SDK による自動機械学習とモデル解釈 (60min)
+
+- [品質管理における不良の要因探索](Handson/AutoML-Python-factory.md)
 
 ### 4. Try yourself !  (90min)
 
