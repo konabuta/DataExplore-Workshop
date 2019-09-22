@@ -8,7 +8,7 @@
 データ探索においても、データの特徴や関係性を理解する際に利用する機械学習モデルを開発する手段として自動機械学習は有効です。
 
 
-# AutoML テクノロジー
+# AutoML 関連テクノロジー
 * [Microsoft - Automated Machine Learing](https://azure.microsoft.com/ja-jp/services/machine-learning-service/)
 * [DataRobot](https://www.datarobot.com/jp/)
 * [Google - AutoML](https://cloud.google.com/automl/?hl=ja)

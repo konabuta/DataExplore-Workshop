@@ -50,4 +50,31 @@ https://ml.azure.com/workspaceportal
 
 <br/> 
 
+
+### Compute Target
+機械学習のトレーニングを回すための計算環境 (Machine Learning Compute) を設定します。
+Workspace の画面の左パネルの **_Compute_** から、計算環境を作成していきます。
+
+<img src="./docs/images/aml-compute.png" width=150> 
+
+**Add** して、新規で計算環境を構築します。
+
+<img src="./docs/images/aml-compute-add.png" ><br/>
+
+**cpucluster** という名称で、Compute Type は **Machine Learning Compute** を選択します。
+
+<img src="./docs/images/aml-compute-add-name-type.png"><br/>
+
+VMの種類やノードの設定を行います。下記画面を参考に選択してください。設定が完了したら、Create を押して環境作成を開始します。
+
+<img src="./docs/images/aml-compute-add-details.png"><br/>
+
+計算環境の作成が無事終わったことを確認します。
+
+<img src="./docs/images/aml-compute-list.png"><br/>
+
+## Azure Machine Learning Python SDK 環境
 ### Notebook VM
+
+
+### ローカル PC の Python 環境

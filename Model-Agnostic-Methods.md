@@ -14,6 +14,9 @@
 | Permutation Feature Importance | [Python](Samples/Linear-Regression) | Statistics / Machine Learning | Linear Regression (線形回帰) を用いたモデル開発のサンプルコード| 
 | LIME | [Python](Samples/LIME) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
 | SHAP | [Python](Samples/SHAP) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
+
+<br/>
+
 ---
 
 
@@ -77,8 +80,3 @@ SHAP も LIME と同じように、個々の予測値についての説明変数
 <img src="docs/images/shap-factory.png">
 
 *品質管理モデルの例 ... 赤は不良の確率を増加、青は不良の確率を減少させることを意味する*
-
-
-
-
-

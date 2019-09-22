@@ -37,8 +37,33 @@ etc
 
 |   Category                   |  Microsoft Technology      |
 | -----------------------------| ---------------------------|
-|  Automated Machine Learning  |  1. Azure Machine Learning    |
-|  Interpretable Algorithms    |  1. Power BI - Key Influencers<br>2. Microsoft Interpret ML<br>3. Custom Python, R        |
-|  Model Agnostic Methods      |  1. Azure Machine Learning Interpretability SDK<br>2. Custom Python, R              |
+|  Automated Machine Learning  |  1. Azure Machine Learning service   |
+|  Interpretable Algorithms    |  1. Power BI - Key Influencers<br>2. Microsoft Interpret ML<br>3. カスタム Python & R        |
+|  Model Agnostic Methods      |  1. Azure Machine Learning Interpretability SDK<br>2. カスタム Python & R              |
 
+<br/>
+
+## Details
+
+* Automated Machine Learning
+* Interpretable Algorithms
+* Model-Agnostic Methods
+ <!-- - 機械学習によるデータ探索
+    - [Automated Machine Learning](Automated-Machine-Learning.md)
+    - [Interpretable Algorithms](Interpretable-Algorithms.md)
+        - Decision Tree
+        - Linear Regression
+    - [Model-Agnostic Methods](Model-Agnostic-Methods.md)
+        - Global Surrogate
+        - LIME, SHAP
+- Microsoft Service 
+    - [Azure Machine Learning service](Azure-Machine-Learning-service.md)  
+        - Automated Machine learning     
+        - Interpretability SDK
+    - [Power BI](PowerBI.md)
+        - Key Influencers
+    - [Azure Machine Learning service](Azure-Machine-Learning-service.md)
+
+    - [Other](Other.md) 
+        - Microsoft InterpretML -->
 

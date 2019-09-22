@@ -1,32 +1,15 @@
 # Interpretable Algorithms
 
-解釈可能な機械学習モデルを利用するアプローチです。大きく2通りあります。
-- 従来の統計解析手法のモデル
-- 精度が高く解釈可能なモデル
+解釈可能な機械学習モデルを利用するアプローチです
 
 ### 従来の統計解析のモデル
 - Decision Tree (決定木)
 - Linear Regression (線形回帰)
 - GLM (一般化線形モデル)
 
-### 精度が高く解釈可能なモデル
-- Microsoft Interpret ML
 
 <br/>
 
-## Sample Code
-
-下記の表には、"Interpretable Algorithms" のサンプルコードをリストしています。Environment列のリンクからアクセスできます。
-
-| Algorithm | Environment | Type | Description | 
-| --- | --- | --- | --- |
-| Decision Tree | [Python](Samples/Decision-Tree) | Statistics | Decision Tree (決定木) を用いたモデル開発のサンプルコード| 
-| Linear Regression | [Python](Samples/Linear-Regression) | Statistics | Linear Regression (線形回帰) を用いたモデル開発のサンプルコード| 
-| Microsoft InterpretML | [Python](Samples/Interpret) | Microsoft Research | Microsoft Interpret ML によるモデル開発のサンプルコード| 
-
-<br/>
-
----
 
 # Decision Tree (決定木)
 
@@ -50,7 +33,10 @@
 
 例えば、「温度が35℃以上」&「湿度が60%以上」であれば不良の割合がかなり多いことがわかります。一方、「温度が35℃以下」&「スキルがベテラン」の場合は不良の割合が少ないです。
 
-このように決定木は、どういった条件で予測値が発生するのかが明確なので、非常に解釈性のあるモデルです。
+このように決定木は、どういった条件で予測値が算出されるのかが明確なので、解釈性のあるモデルです。
+
+
+... [Sample Code](Sample/Decision-Tree)
 
 <br/>
 
@@ -70,28 +56,16 @@
 
 線形回帰は、説明変数に重みをつけたデータを足し合わせて予測値を出力するので、シンプルな解釈可能モデルの１つです。変数の重要度が分かれば予測値に影響している変数もわかってきます。
 
+... [Sample Code](Sample/Linear-Regression)
+
 <br/>
 
 <!-- # 一般化線形モデル (工事中) -->
 
-# Microsoft InterpretML
+# Microsoft 
 
-解釈可能な一般化加法モデルをベースにしたアルゴリズム。 
+* **_[Power BI - Key Influencers](PowerBI.md)_** ... 可視化ツール Power BI の KPI 探索機能。マウス操作で、統計解析のモデルを利用した要因探索が可能。
+* **_[Microsoft Interpret ML](InterpretML.md)_** ... Microsoft Researchが開発した解釈可能な機械学習モデルが利用できるフレームワーク。
+* **_カスタム Python & R_** ... ユーザ自らアルゴリズムを構築するアプローチ。Azure Machine Learning を利用すると効率的にモデル開発作業を進めることができます。
 
-**GitHub Repo** : [Interpret ML - Alpha Release](https://github.com/microsoft/interpret)
-
-モデル全体での説明変数の重要度 (グローバル) と個々の予測値に対する説明変数の重要度 (ローカル) の両方に対応している。
-
-<br/>
-
-<img src="docs/images/interpret-global-factory.png" width=500>  
-
-*グローバルなモデル解釈の例 (モデル全体の説明変数の重要度)*
-<br/><br/>
-
-
-
-<img src="docs/images/interpret-local-factory.png" width=500>
-
-*ローカルなモデル解釈の例 (不良確率 71.1% : オレンジは不良確率の増加、青は不良確率の減少を意味)*
 
