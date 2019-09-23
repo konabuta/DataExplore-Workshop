@@ -2,7 +2,7 @@
 
 ### 1. Power BI - Key Influencers による要因探索 (30min)
 
-- [タイタニック号で生き残った乗船顧客の属性は？](Handson/Key-Influencers-titanic-survived.md')
+- [タイタニック号で生き残った乗船顧客の属性は？](Handson/Key-Influencers-titanic-survived.md)
 - サンプル  : [titanic-sample.pbix](Sample/Key-Influencers/titanic-sample.pbix)
 
 ### 2. Automated ML UX によるノーコーディング自動機械学習 (30min)
