@@ -1,6 +1,6 @@
 # Microsoft InterpretML
 
-解釈可能な一般化加法モデルをベースにしたアルゴリズム。 
+Microsoft Research が開発している、解釈可能な一般化加法モデルをベースにした機械学習アルゴリズムです。
 
 **GitHub Repo** : [Interpret ML - Alpha Release](https://github.com/microsoft/interpret)
 

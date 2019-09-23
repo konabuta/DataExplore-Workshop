@@ -4,10 +4,10 @@
 ## Table of Content
  - [Power BI Desktop](#power-bi-deskop)
  - [Azure Machine Learning service](#azure-machine-learning-service)
-    1. [ワークスペース](###1-ワークスペース)
+    1. [ワークスペース](#1-ワークスペース)
     2. [Compute Target](#2-compute-target)
     3. [Python SDK 環境](#3-python-sdk-環境)
-    4. [コードのインポート](##4-コードのインポート)
+    4. [コードのインポート](#4-コードのインポート)
 
 ## Power BI Deskop
 Power BI Desktop は無料で利用できる可視化ツールです。  
@@ -89,6 +89,8 @@ Status が **Running** になっていることを確認し、**Jupyter** をク
 
 <img src="./docs/images/aml-nvm-created.png"><br/>
 
+<br/>
+
 #### B. ローカル PC の Python 環境
 
 1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html) もしくは [Anaconda](https://www.anaconda.com/distribution/) をインストールします。
@@ -131,9 +133,9 @@ azureml.core.VERSION
 ```
 
 ### 4. コードのインポート
-#### Notebook VM
+#### A. Notebook VM
 
-Git がインストール済みのため、Gitコマンドを利用する方法です。
+Notebook VM には Git がインストール済みのため、その Git コマンドからインポートする方法です。
 
 Jupyter Notebook の Terminal を開きます。自分の個人フォルダーに移動し、本リポジトリをクローンします。
 
@@ -141,7 +143,9 @@ Jupyter Notebook の Terminal を開きます。自分の個人フォルダー�
 cd <個人フォルダ>
 git clone https://github.com/konabuta/DataExplore-Workshop
 ```
-#### ローカル PC の Python 環境
+<br/>
+
+#### B. ローカル PC の Python 環境
 
 下記のいずれかの方法でローカルPCにインポートします。
 
