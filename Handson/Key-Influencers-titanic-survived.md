@@ -30,7 +30,8 @@ Key Influencers が利用できるように、"Surviced" 列のデータ形式�
 <img src="../docs/images/pbi-query-edit.png"><br/><br/>
 
 Survived 列のデータ形式を **テキスト** に編集します。
-<img src="../docs/images/pbi-query-edit.png"><br/><br/>
+
+<img src="../docs/images/pbi-survived-text.png"><br/><br/>
 
 **新規手順の追加** を選択します。
 
