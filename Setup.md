@@ -2,27 +2,27 @@
 ハンズオンに必要な環境のセットアップ方法を記載します。
 
 ## Table of Content
- - Power BI Desktop
- - Azure Machine Learning service
-    - ワークスペース
-    - Notebook VM
-    - Compute Target
-    - Python SDK 環境
+ - [Power BI Desktop](#power-bi-deskop)
+ - [Azure Machine Learning service](#azure-machine-learning-service)
+    1. [ワークスペース](###1-ワークスペース)
+    2. [Compute Target](#2-compute-target)
+    3. [Python SDK 環境](#3-python-sdk-環境)
+    4. [コードのインポート](##4-コードのインポート)
 
 ## Power BI Deskop
 Power BI Desktop は無料で利用できる可視化ツールです。  
 
-下記リンクより、Microsoft ストアから Windows アプリとしてインストールでできます。
+下記リンクより、Microsoft ストアから Windows アプリとしてインストールでできます。  
 http://aka.ms/pbidesktopstore
 
-※ Widnowsストア経由でインストールされた Power BI Desktop は、自動更新機能が常に最新バージョンをご利用になれます。
+※ Widnowsストア経由でインストールされた Power BI Desktop は、自動更新機能によって常に最新バージョンをご利用になれます。
 
 <br/>
 
 ## Azure Machine Learning service
 Azure Machine Learning service は機械学習のモデル学習、デプロイ、運用管理をサポートするクラウドベースの機械学習の統合プラットフォームです。
 
-### ワークスペース
+### 1. ワークスペース
 
 - [Azure Portal](https://portal.azure.com/) へアクセスします。
 - 画面左上の**リソースの作成** を選択します。  
@@ -52,7 +52,7 @@ https://ml.azure.com/workspaceportal
 <br/> 
 
 
-### Compute Target
+### 2. Compute Target
 機械学習のトレーニングを回すための計算環境 (Machine Learning Compute) を設定します。
 Workspace の画面の左パネルの **_Compute_** から、計算環境を作成していきます。
 
@@ -74,8 +74,8 @@ VMの種類やノードの設定を行います。下記画面を参考に選択
 
 <img src="./docs/images/aml-compute-list.png"><br/>
 
-### Python SDK 環境
-#### Notebook VM
+### 3. Python SDK 環境
+#### A. Notebook VM
 
 Notebook VM は、 Azure Machine Learning service が提供するマネージドな Jupyter Notebook / Jupyter Lab 環境です。
 
@@ -85,11 +85,11 @@ Notebook VM は、 Azure Machine Learning service が提供するマネージド
 任意の名称とVMのスペックを選択して、作成を開始します。
 <img src="./docs/images/aml-nvm-create.png"><br/>
 
-Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook を起動します。
+Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook にアクセスできることが確認できれば完了です。
 
 <img src="./docs/images/aml-nvm-created.png"><br/>
 
-#### ローカル PC の Python 環境
+#### B. ローカル PC の Python 環境
 
 1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html) もしくは [Anaconda](https://www.anaconda.com/distribution/) をインストールします。
 
@@ -123,15 +123,17 @@ python -m ipykernel install --user --name myenv --display-name myenv
 jupyter notebook
 ```
 
-次の Python プログラムで正常に Azure Machine Learning service Python SDK がインポートできたか確認します。
+次の Python プログラムで正常に Azure Machine Learning service Python SDK がインポートできたか確認できれば完了です。
 
 ```python
 import azureml.core
 azureml.core.VERSION
 ```
 
-### 本リポジトリのコードのインポート
+### 4. コードのインポート
 #### Notebook VM
+
+Git がインストール済みのため、Gitコマンドを利用する方法です。
 
 Jupyter Notebook の Terminal を開きます。自分の個人フォルダーに移動し、本リポジトリをクローンします。
 
@@ -143,8 +145,8 @@ git clone https://github.com/konabuta/DataExplore-Workshop
 
 下記のいずれかの方法でローカルPCにインポートします。
 
-* 作業フォルダにて、本リポジトリをクローン
+A. ローカルPCの作業フォルダにて、本リポジトリをクローン
 ```bash
 git clone https://github.com/konabuta/DataExplore-Workshop
 ```
-* [本リポジトリの Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、解凍する
+B. 本リポジトリの [Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、ローカルPCの作業フォルダで解凍する　
