@@ -8,8 +8,9 @@
 4. 結果の確認
 5. モデルの解釈
 
-サンプルの Notebook ([FactoryQC-classification-explainer](Sample/Automated-Machine-Learning/FactoryQC-classification-explainer.ipynb))の内容について、抜粋したものを下記にて説明します。<br/>
+サンプルの Notebook ([FactoryQC-classification-explainer](Sample/Automated-Machine-Learning/FactoryQC-classification-explainer.ipynb)) を順番に実行してください。下記に内容を一部抜粋して、説明します。<br/>
 
+---
 
 ## 1. Azure Machine Learning service Workspace 接続
 

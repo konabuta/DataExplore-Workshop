@@ -2,6 +2,8 @@
 
 タイタニック号の乗船リストデータを利用して、生き残った乗客の属性を探索します。
 
+---
+
 ## 1. データのダウンロード
 [Kaggle : Titanic Machine Learning from Disaster](https://www.kaggle.com/c/titanic/data) からタイタニック号の乗船顧客データをPCにダウンロードします。
 

@@ -8,6 +8,8 @@
 4. 結果の確認
 5. (Option) モデルのデプロイ
 
+---
+
 ## 1. データのダウンロード
 [本リポジトリのdataフォルダ](https://github.com/konabuta/DataExplore-Workshop/tree/master/Sample/data)から、**Factory.csv** をローカルPCにダウンロードします。<br/>
 
@@ -97,13 +99,13 @@ Experimennt name に **factory-dllab**、計算環境に **cpucluster** を選�
 
 デプロイする推論環境の名称を入力し、Deploy します。
 
-<img src="../docs/images/aml-automl-deploy-model.png"><br/>
+<img src="../docs/images/aml-automl-deploy-model.png" width=350><br/>
 
 推論環境 (Azure Container Instances) へのデプロイが始まります。
 
 <img src="../docs/images/aml-automl-deploy-started.png" width=200>
 
-無事完了したことを確認します。
+完了するとメッセージが表示されます。
 
 <img src="../docs/images/aml-automl-deploy-finished.png" width=200><br/>
 
