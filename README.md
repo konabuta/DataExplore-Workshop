@@ -35,7 +35,7 @@
 | Global Surrogate | _作成中_<!--[Python](Sample/Global-Surrogate)--> | Model-Agnostic | Global Surrogate を用いたモデル解釈| 
 | Permutation Feature Importance |_作成中_<!--[Python](Sample/PFI)--> | Model-Agnostic | PFI を用いたモデル解釈| 
 | LIME | _作成中_<!--[Python](Sample/LIME)--> | Model-Agnostic | LIME によるモデル解釈| 
-| SHAP | _作成中_<!--[Python](Sample/SHAP)--> | SHAP によるモデル解釈|
+| SHAP | _作成中_<!--[Python](Sample/SHAP)--> | Model-Agnostic | SHAP によるモデル解釈|
 
 
 <br/>
