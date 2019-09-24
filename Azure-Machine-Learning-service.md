@@ -10,10 +10,8 @@ Azure Machine Learning service は、機械学習/深層学習のプロセスを
 <br/><br/>
 
 
----
-
 ## 自動機械学習 Automated Machine Learning
-Azure Machine Learning が提供する Automated Machine Learning は、特徴量エンジニアリング & モデル選択 & パラメータ選択を全自動で行います。
+Azure Machine Learning service に含まれる Automated Machine Learning は、**特徴量エンジニアリング & アルゴリズム選択 & パラメータ選択** を全自動で行います。
 
 <img src="docs/images/automl.gif"><br/>
 
