@@ -9,6 +9,7 @@
     3. [Python SDK 環境](#3-python-sdk-環境)
     4. [コードのインポート](#4-コードのインポート)
 - [Other](#Other)
+    - [Microsoft Interpret ML](#microsoft-interpret-ml)
 
 ## Power BI Deskop
 Power BI Desktop は無料で利用できる可視化ツールです。  
@@ -156,9 +157,10 @@ git clone https://github.com/konabuta/DataExplore-Workshop
 ```
 B. 本リポジトリの [Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、ローカルPCの作業フォルダで解凍する　
 
+<br/>
 
 ## Other
-### Microsoft Interpret ML 開発環境 
+### Microsoft Interpret ML
 Microsoft Interpret ML のライブラリを利用する際には、Azure Machine Learning service とはパッケージの競合を防ぐために別の仮想環境を利用することを推奨します。
 
 1. Anaconda Prompt を開いて、interpretという名前の仮想環境を作成します。

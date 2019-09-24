@@ -2,15 +2,15 @@
 
 ビッグデータの時代になり、データ分析のニーズが高まっています。BIツール・Excel による可視化、機械学習による予測モデリングなどデータを扱うための様々なテクノロジーが生まれています。
 
-その中でも **記述的分析・診断的分析** に属するデータ探索 (要因探索、原因分析etc) は未だにデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くの活用シーンがあります。
+その中でも **記述的分析・診断的分析** に属するデータ探索 (要因探索、原因分析 ...) は未だにデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くの活用シーンがあります。
 
 <br/>
 
 <img src="./docs/images/analytics_steps.gif" width = 400><br/>
 
-しかしながら、複雑・大量になっているデータに対する探索は非常に困難です。理由は下記の通りです。
+しかしながら、複雑・大量になっているデータに対する探索は非常に困難です。下記のような理由が挙げられます。
 
-- 可視化はできているけど、**客観的なデータの関係性** が理解ができない
+- 直感的に可視化してデータの傾向は理解しているけど、**客観的なデータの関係性** が理解ができない
 - 統計解析・機械学習のテクノロジーを導入する **ハードルが高い**
 - **機械学習モデルが複雑** で解釈できない、理解できない、信用されない  
 etc
@@ -23,7 +23,7 @@ etc
 
 ## モデル解釈の重要性
 
-複雑なデータの関係性を理解するために統計解析や機械学習の利用が必要になります。しかしながら近年はアルゴリズムが複雑化して精度が大幅に向上しましたが、一方で下記のような問題が出てくるようになりました。
+複雑なデータの関係性を理解するために統計解析や機械学習の利用が必要になります。しかしながら、近年はアルゴリズムが複雑化して精度が大幅に向上しましたが、一方で下記のような問題が出てくるようになりました。
 
 - 構築された機械学習モデルは妥当なものか？信頼できるか？
 - モデルをどうやって改善すればいいか分からない
@@ -38,11 +38,11 @@ etc
 - 解釈可能なモデルを利用する (Interpretable Algorithms)
 - Black Box なモデルを解釈する (Model-Agnostiic Methods)
 
-本ワークショップでは、このモデル解釈についても内容に含んでいます。
+本ワークショップでは、このモデル解釈可能性も取り上げます。
 
 <br/>
 
-## Technology & Microsoft Service
+## Technology & Microsoft サービス
 利用するテクノロジーと Microsoft サービスについて下記て整理します。詳細についてはリンク先のドキュメントを参照してください。
 
 ### Technology
@@ -53,7 +53,7 @@ etc
 - **[Model-Agnostic Methods](Model-Agnostic-Methods.md)** 
     - Black Box なモデルを解釈するためアプローチ方法。あらゆるモデルに対応可能な汎用的なモデル解釈フレームワーク。
 
-### Microsoft Service
+### Microsoft サービス
 
 - **[Azure Machine Learning service](Azure-Machine-Learning-service.md)** 
     - 機械学習/深層学習のプロセスを効率的に回すための、**オープン & マネージドな分析プラットフォーム**です。**自動機械学習 Automated ML** など効率的に実験的なモデル学習を進める機能や、最先端の **モデル解釈フレームワーク Interpretability SDK** も提供しています。
@@ -74,23 +74,4 @@ etc
 <br/>
 
 
-
- <!-- - 機械学習によるデータ探索
-    - [Automated Machine Learning](Automated-Machine-Learning.md)
-    - [Interpretable Algorithms](Interpretable-Algorithms.md)
-        - Decision Tree
-        - Linear Regression
-    - [Model-Agnostic Methods](Model-Agnostic-Methods.md)
-        - Global Surrogate
-        - LIME, SHAP
-- Microsoft Service 
-    - [Azure Machine Learning service](Azure-Machine-Learning-service.md)  
-        - Automated Machine learning     
-        - Interpretability SDK
-    - [Power BI](PowerBI.md)
-        - Key Influencers
-    - [Azure Machine Learning service](Azure-Machine-Learning-service.md)
-
-    - [Other](Other.md) 
-        - Microsoft InterpretML -->
 

@@ -1,18 +1,7 @@
 # Model-Agnostic Methods
 
 モデルに依存しない汎用的なモデル解釈の主要アルゴリズムの概要を説明します。ニューラルネットワークなど複雑な Black Boxなモデルに適用できます。<br/>
-<!-- ## Sample Code
 
-下記の表には、"Interpretable Algorithms" のサンプルコードをリストしています。Environment列のリンクからアクセスできます。
-
-| Algorithm | Environment | Type | Description | 
-| --- | --- | --- | --- |
-| Global Surrogate | [Python](Samples/Decision-Tree) | Statistics / Machine Learning | Decision Tree (決定木) を用いたモデル開発のサンプルコード| 
-| Permutation Feature Importance | [Python](Samples/Linear-Regression) | Statistics / Machine Learning | Linear Regression (線形回帰) を用いたモデル開発のサンプルコード| 
-| LIME | [Python](Samples/LIME) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
-| SHAP | [Python](Samples/SHAP) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
-
-<br/> -->
 
 ---
 
@@ -34,8 +23,7 @@ etc
 <br/>
 
 ## Permutation Feature Importance
-グローバルなモデル解釈方法。インプットデータを変化させた際の予測値の変化の大きさから、変数の影響度を判断するアプローチ方法。
-
+グローバルなモデル解釈方法。インプットデータを変化させた際の予測値の変化の大きさから、変数の影響度を判断するアプローチ方法。[Random Forest の論文](https://link.springer.com/article/10.1023%2FA%3A1010933404324)で言及されている。
 <br/>
 
 ## LIME
