@@ -37,3 +37,5 @@
 <br/>
 
 
+# 参考
+- [Azure AI 概要](https://azure.microsoft.com/ja-jp/overview/ai-platform/#machine-learning)
