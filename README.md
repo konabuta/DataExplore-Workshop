@@ -10,7 +10,7 @@
 
 
 # Agenda
-### [事前準備](./Setup.md)
+### [Setup](./Setup.md)
 ワークショップの開発環境の準備
 
 ### [Introduction](./Introduction.md)

@@ -8,6 +8,7 @@
     2. [Compute Target](#2-compute-target)
     3. [Python SDK 環境](#3-python-sdk-環境)
     4. [コードのインポート](#4-コードのインポート)
+- [Other](#Other)
 
 ## Power BI Deskop
 Power BI Desktop は無料で利用できる可視化ツールです。  
@@ -95,7 +96,7 @@ Status が **Running** になっていることを確認し、**Jupyter** をク
 
 1. [Miniconda](https://docs.conda.io/en/latest/miniconda.html) もしくは [Anaconda](https://www.anaconda.com/distribution/) をインストールします。
 
-2. Anaconda Prompt を開いて、Pythonの myenv という名前の環境を作成します。
+2. Anaconda Prompt を開いて、myenv という名前の仮想環境を作成します。
 
 ```bash
 # New Conda
@@ -154,3 +155,38 @@ A. ローカルPCの作業フォルダにて、本リポジトリをクローン
 git clone https://github.com/konabuta/DataExplore-Workshop
 ```
 B. 本リポジトリの [Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、ローカルPCの作業フォルダで解凍する　
+
+
+## Other
+### Microsoft Interpret ML 
+Microsoft Interpret ML のライブラリを利用する際には、Azure Machine Learning service とは競合を防ぐために別の conda 環境を利用することを推奨します。
+
+1. Anaconda Prompt を開いて、interpretという名前の仮想環境を作成します。
+
+```bash
+# New Conda
+conda create -n interpret Python=3.6
+# Activate 
+conda activate interpret
+```
+
+3. Microsoft Interpret ML をインストールします。
+```bash
+# Package Install
+pip install interpret
+```
+
+4. Jupyter Notebook をインストールし、カーネルを有効化します。
+```bash
+# Install Jupyer Notebook
+conda install notebook ipykernel
+```
+
+```bash
+# Jupyter Kernel Attach
+python -m ipykernel install --user --name interpret --display-name interpret
+```
+```bash
+# Start Jupyter Notebook
+jupyter notebook
+```
