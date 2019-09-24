@@ -1,10 +1,7 @@
 # Model-Agnostic Methods
 
-モデルに依存しない汎用的なモデル解釈の主要アルゴリズムの概要を説明します。ニューラルネットワークなど複雑な Black Boxなモデルに適用できます。
-
-<br/>
-
-## Sample Code
+モデルに依存しない汎用的なモデル解釈の主要アルゴリズムの概要を説明します。ニューラルネットワークなど複雑な Black Boxなモデルに適用できます。<br/>
+<!-- ## Sample Code
 
 下記の表には、"Interpretable Algorithms" のサンプルコードをリストしています。Environment列のリンクからアクセスできます。
 
@@ -15,7 +12,7 @@
 | LIME | [Python](Samples/LIME) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
 | SHAP | [Python](Samples/SHAP) | Machine Learning | Microsoft Interpret ML によるモデル開発のサンプルコード| 
 
-<br/>
+<br/> -->
 
 ---
 
