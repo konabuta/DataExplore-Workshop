@@ -32,10 +32,10 @@
 | Power BI - Key Influencers | [Power BI](Sample/Key-Influencers/titanic-sample.pbix) | Interpretable| KPI 要因探索ビジュアル機能 |
 | Azure ML Automated ML + Interpretability SDK | [Azure ML service Python SDK](Sample/Automated-Machine-Learning) | Model-Agnostic | 自動機械学習 + モデル解釈統合フレームワーク| 
 | Microsoft InterpretML | [Python - Classification](Sample/Interpret/FactoryQC-InterpretML-classification.ipynb) | Interpretable | Microsoft Interpret ML によるモデル開発のサンプルコード| 
-| Global Surrogate | _作成中_<!--[Python](Sample/Global-Surrogate)--> | Model-Agnostic | Decision Tree (決定木) を用いたモデル開発のサンプルコード| 
-| Permutation Feature Importance |_作成中_<!--[Python](Sample/PFI)--> | Model-Agnostic | Linear Regression (線形回帰) を用いたモデル開発のサンプルコード| 
-| LIME | _作成中_<!--[Python](Sample/LIME)--> | Model-Agnostic | Microsoft Interpret ML によるモデル開発のサンプルコード| 
-| SHAP | _作成中_<!--[Python](Sample/SHAP)--> | Model-Agnostic | Microsoft Interpret ML によるモデル開発のサンプルコード|
+| Global Surrogate | _作成中_<!--[Python](Sample/Global-Surrogate)--> | Model-Agnostic | Global Surrogate を用いたモデル解釈| 
+| Permutation Feature Importance |_作成中_<!--[Python](Sample/PFI)--> | Model-Agnostic | PFI を用いたモデル解釈| 
+| LIME | _作成中_<!--[Python](Sample/LIME)--> | Model-Agnostic | LIME によるモデル解釈| 
+| SHAP | _作成中_<!--[Python](Sample/SHAP)--> | SHAP によるモデル解釈|
 
 
 <br/>

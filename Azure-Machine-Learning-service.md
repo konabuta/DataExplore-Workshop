@@ -6,7 +6,7 @@ Azure Machine Learning service は、機械学習/深層学習のプロセスを
 
 <img src="https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-azure-machine-learning-architecture/workflow.png" width = "500">   
 
-[こちらのスライド](Presentation/AzureML概要.pptx)もご参照ください。
+[こちらのスライド](https://www.slideshare.net/keitaonabuta/azure-machine-learning-service-20199)もご参照ください。
 <br/><br/>
 
 
@@ -37,7 +37,7 @@ Azure Machine Learning service が提供するモデル解釈ライブラリ。�
 
 
 ### Mimic
-**Global Surrogate** に対応したモデル解釈に対応する Explainer です。
+**Global Surrogate** に対応する Explainer です。
 
 Azure Machine Learning では、`LightGBM` `Linear Regression` `SGD` `Decision Tree` が利用できます。
 
@@ -61,7 +61,7 @@ explainer = MimicExplainer(model,
 <br/>
 
 ### Feature Permutation
-**Permutation Feature Importance** に対応した Explainer です。
+**Permutation Feature Importance** に対応する Explainer です。
 
 ```python
 from azureml.explain.model.permutation.permutation_importance import PFIExplainer 
@@ -76,7 +76,7 @@ explainer = PFIExplainer(model,
 
 ### Tabular Explainer
 
-**SHAP** に対応した Explainer です。
+**SHAP** に対応する Explainer です。
 - ツリーベースのモデルの場合は、SHAP TreeExplainer を適用
 - DNN モデルの場合は、SHAP DeepExplainer を適用
 - BlackBox モデルとして扱う場合は、SHAP KernelExplainer を適用

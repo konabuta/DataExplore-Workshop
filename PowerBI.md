@@ -1,16 +1,16 @@
 # Power BI
 
-Power BI は、エンタープライズまでスケール可能な **セルフサービス BI**サービスです。膨大なデータに対して、簡単なマウス操作で、傾向を分析＆“見える化”し重要な気づきを発掘することができます。
+Power BI は、エンタープライズまでスケール可能な **セルフサービス BI** サービスです。膨大なデータに対して、簡単なマウス操作で、傾向を分析＆“見える化”し重要な気づきを発掘することができます。
 
 <img src="docs/images/powerbi-pic.png" width=600>
 <br/>
 
-*2019年 Gartner「Magic Quadrant for Analytics and Business Intelligence Platforms」において Leader に選出されています。*
+*2019年 Gartner「Magic Quadrant for Analytics and Business Intelligence Platforms」において Leader に選出されています。([View report](https://info.microsoft.com/ww-landing-gartner-mq-bi-analytics-2019.html?LCID=EN-US))*
 <br/><br/>
 
 ## Key Influencers
 
-Key influencers は、データに存在する KPI の要因探索を実現するビジュアル機能です。
+Key influencers は、データに存在する **KPI の要因探索** を実現するビジュアル機能です。
 
 <img src="docs/images/keyinfluencers-pic.png" width=500>
 <br/><br/>
