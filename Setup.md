@@ -8,7 +8,7 @@
     2. [Compute Target](#2-compute-target)
     3. [Python SDK 環境](#3-python-sdk-環境)
     4. [コードのインポート](#4-コードのインポート)
-- [Other](#Other)
+- [Option](#Option)
     - [Microsoft Interpret ML](#microsoft-interpret-ml)
 
 ## Power BI Deskop
@@ -39,6 +39,13 @@ Azure Machine Learning service は機械学習のモデル学習、デプロイ�
 - 各種情報を入力します。  
 <img src="./docs/images/setup-aml-portal4.png" width=400> 
 
+|Item|Value|
+|------------- |----------------|
+| ワークスペース名 | _任意の3~33文字のアルファベット・数値とハイフンで Okay_|
+|サブスクリプション| _利用するAzure Subscriptionを選択_|
+|リソースグループ  |_Azure ML 用に新規に作成することをオススメ_|
+|場所|_任意のRegion_|
+
 - **確認および作成** をクリックし、レビュー画面にて **作成** を選択します。
 - 無事デプロイが完了したら、**リソースに移動** します。  
 <img src="./docs/images/setup-aml-portal5.png" width=400> 
@@ -46,7 +53,7 @@ Azure Machine Learning service は機械学習のモデル学習、デプロイ�
 - Azure Machine Learning service ワークスペースの画面が表示されたら完了です。
 <img src="./docs/images/ws.png" width=400> 
 
-- また、プレビュー中（2019年9月現在）のワークスペース画面にも、下記リンクからアクセスできることを確認してください。  <br/>    
+- また、プレビュー中（2019年10月6日時点）のワークスペース画面にも、下記リンクからアクセスできることを確認してください。  <br/>    
 **New Workspace Experience**  
 https://ml.azure.com/workspaceportal   
 <img src="./docs/images/new-ws2.0.png" width=400> 
@@ -64,7 +71,9 @@ Workspace の画面の左パネルの **_Compute_** から、計算環境を作�
 
 <img src="./docs/images/aml-compute-add.png" ><br/>
 
-**cpucluster** という名称で、Compute Type は **Machine Learning Compute** を選択します。
+**cpucluster** という名称で、Compute Type は **Machine Learning Compute** を選択します。Machine Learning は機械学習用に Pre-Built された PaaS で提供される計算環境です。
+
+※ VMも選択可能だが、スケールしないため通常は Machine Learning Compute を利用
 
 <img src="./docs/images/aml-compute-add-name-type.png"><br/>
 
@@ -77,6 +86,8 @@ VMの種類やノードの設定を行います。下記画面を参考に選択
 <img src="./docs/images/aml-compute-list.png"><br/>
 
 ### 3. Python SDK 環境
+Python 環境としては、Notebook VM の利用を推奨しています。ただローカルPCの Python 環境からも Azure Machine Learning service にアクセスすることができます。A, B のいずれかの手順を実行してください。
+
 #### A. Notebook VM
 
 Notebook VM は、 Azure Machine Learning service が提供するマネージドな Jupyter Notebook / Jupyter Lab 環境です。
@@ -86,6 +97,11 @@ Notebook VM は、 Azure Machine Learning service が提供するマネージド
 
 任意の名称とVMのスペックを選択して、作成を開始します。
 <img src="./docs/images/aml-nvm-create.png"><br/>
+
+|Item|Value|
+|------------- |----------------|
+|Notebook VM Name|_Regionで一意となる名称が必要_|
+|VM  Type|_任意のスペックから選択可能 (CPU,GPU)_|
 
 Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook にアクセスできることが確認できれば完了です。
 
@@ -135,9 +151,11 @@ azureml.core.VERSION
 ```
 
 ### 4. コードのインポート
+ハンズオンで利用するコードをインポートします。利用する Python 環境に応じて、A, B のいずれかの手順を実行してください。
+
 #### A. Notebook VM
 
-Notebook VM には Git がインストール済みのため、その Git コマンドからインポートする方法です。
+Notebook VM には Git がインストール済みのため、その Git コマンドからインポートします。
 
 Jupyter Notebook の Terminal を開きます。自分の個人フォルダーに移動し、本リポジトリをクローンします。
 
@@ -151,17 +169,18 @@ git clone https://github.com/konabuta/DataExplore-Workshop
 
 下記のいずれかの方法でローカルPCにインポートします。
 
-A. ローカルPCの作業フォルダにて、本リポジトリをクローン
+A. [Git](https://gitforwindows.org/) or [GitHub Desktop](https://desktop.github.com/) がインストールされている場合は、ローカルPCの作業フォルダにて、本リポジトリをクローン
 ```bash
+# git コマンドの例
 git clone https://github.com/konabuta/DataExplore-Workshop
 ```
 B. 本リポジトリの [Zip ファイル](https://github.com/konabuta/DataExplore-Workshop/archive/master.zip) をダウンロードし、ローカルPCの作業フォルダで解凍する　
 
 <br/>
 
-## Other
+## Option
 ### Microsoft Interpret ML
-Microsoft Interpret ML のライブラリを利用する際には、Azure Machine Learning service とはパッケージの競合を防ぐために別の仮想環境を利用することを推奨します。
+[Microsoft Interpret ML](https://github.com/microsoft/interpret) のライブラリを利用する際には、Azure Machine Learning service とはパッケージの競合を防ぐため、Azure ML service  Python SDK とは別の仮想環境を利用することを推奨します。
 
 1. Anaconda Prompt を開いて、interpretという名前の仮想環境を作成します。
 
