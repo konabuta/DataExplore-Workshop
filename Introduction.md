@@ -2,7 +2,7 @@
 
 ビッグデータの時代になり、データ分析のニーズが高まっています。BIツール・Excel による可視化、機械学習による予測モデリングなどデータを扱うための様々なテクノロジーが生まれています。
 
-その中でも **記述的分析・診断的分析** に属するデータ探索 (要因探索、原因分析 ...) は未だにデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くの活用シーンがあります。
+その中でも **記述的分析・診断的分析** に属するデータ探索 (要因探索、原因分析 ...) はデータ分析に中心的な取り組みです。製造品の不良分析、ローン審査、顧客分析 ... など数多くの活用シーンがあります。
 
 <br/>
 
@@ -15,7 +15,7 @@
 - **機械学習モデルが複雑** で解釈できない、理解できない、信用されない  
 etc
 
-本ワークショップでは、**診断的分析**にフォーカスして、**機械学習によって高度なデータ探索を行うアプローチ方法** をご紹介します。
+本ワークショップでは、データ探索の中でも **診断的分析** にフォーカスして、**機械学習によって高度なデータ探索を行うアプローチ方法** をご紹介します。
 
 また、Microsoft のテクノロジーを利用することで、上記課題を解決し、効率的・簡単に分析プロセスを進めることを実感いただきます。
 
@@ -38,12 +38,12 @@ etc
 - 解釈可能なモデルを利用する (Interpretable Algorithms)
 - Black Box なモデルを解釈する (Model-Agnostiic Methods)
 
-本ワークショップでは、このモデル解釈可能性も取り上げます。
+本ワークショップでは、この機械学習モデルの解釈可能性も取り上げます。
 
 <br/>
 
 ## Technology & Microsoft サービス
-利用するテクノロジーと Microsoft サービスについて下記て整理します。詳細についてはリンク先のドキュメントを参照してください。
+利用するテクノロジーと Microsoft サービスについて整理します。詳細についてはリンク先のドキュメントを参照してください。
 
 ### Technology
 - **[Automated Machine Learning](Automated-Machine-Learning.md)**   
@@ -62,16 +62,14 @@ etc
 - **[Microsoft Interpret ML](InterpretML.md)**
     - モデル解釈性や精度の両方を追求した機械学習アルゴリズム。Microsoft Research が開発している。
 
-### Mapping
+### Mapping Table
 
 
-|   Category                   |  Microsoft Service      |
+|   Category                   |  Microsoft サービス      |
 | -----------------------------| ---------------------------|
 |  Automated Machine Learning  |  1. Azure Machine Learning service   |
 |  Interpretable Algorithms    |  1. Power BI - Key Influencers<br>2. Microsoft Interpret ML<br>3. カスタム Python & R (Azure ML)       |
 |  Model Agnostic Methods      |  1. Azure Machine Learning Interpretability SDK<br>2. カスタム Python & R  (Azure ML)             |
 
 <br/>
-
-
 

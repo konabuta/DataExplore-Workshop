@@ -21,6 +21,7 @@
 
 - 例： 特徴量作成、標準化、正規化、次元削減、欠損値補完 etc
 
+
 ※ 参考資料 & 動画  
 [decode 2019 AI08 機械学習のためのデータ加工 ～ 特徴量の見つけ方と作り方](https://www.microsoft.com/ja-jp/events/decode/2019session/detail.aspx?sid=AI08)
 

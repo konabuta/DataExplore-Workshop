@@ -5,11 +5,9 @@
 ### 従来の統計解析のモデル
 - Decision Tree (決定木)
 - Linear Regression (線形回帰)
-- GLM (一般化線形モデル)
-
+<!-- - GLM (一般化線形モデル) -->
 
 <br/>
-
 
 # Decision Tree (決定木)
 
