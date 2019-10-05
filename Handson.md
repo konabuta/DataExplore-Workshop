@@ -24,10 +24,11 @@
 
 #### AutoML を極めたい人
 - 品質管理以外のデータを利用して、自動機械学習 Automated ML をやってみる
-- 最近、時系列モデル (Arima,Prophet) が色々追加されたので、試してみる
+- 最近、時系列モデル (Arima,Prophet) が追加されたので、試してみる
 
 #### モデル解釈を極めたい人
 - 自分で作ったモデルを解釈してみる
+- 品質管理以外のデータを利用して、モデル解釈 Interpretability SDK をやってみる
 - Microsoft  Interpret ML を試してみる
 
 

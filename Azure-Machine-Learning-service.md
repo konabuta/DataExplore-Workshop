@@ -11,7 +11,7 @@ Azure Machine Learning service は、機械学習/深層学習のプロセスを
 
 
 ## 自動機械学習 Automated Machine Learning
-Azure Machine Learning service に含まれる Automated Machine Learning は、**特徴量エンジニアリング & アルゴリズム選択 & パラメータ選択** を全自動で行います。
+Azure Machine Learning service に含まれる Automated Machine Learning は、**特徴量エンジニアリング & アルゴリズム選択 & パラメータ選択** を全自動で行います。現在は、**表形式データ (Tabular Data)** をサポートしていみあす。
 
 <img src="docs/images/automl.gif"><br/>
 
@@ -74,12 +74,12 @@ explainer = PFIExplainer(model,
 
 <br/>
 
-### Tabular Explainer
+### Tabular Explainer (SHAP)
 
 **SHAP** に対応する Explainer です。
-- ツリーベースのモデルの場合は、SHAP TreeExplainer を適用
-- DNN モデルの場合は、SHAP DeepExplainer を適用
-- BlackBox モデルとして扱う場合は、SHAP KernelExplainer を適用
+- ツリーベースのモデルの場合は、_SHAP TreeExplainer_ を適用
+- DNN モデルの場合は、_SHAP DeepExplainer_ を適用
+- BlackBox モデルとして扱う場合は、_SHAP KernelExplainer_ を適用
 
 ```python
 from azureml.explain.model.tabular_explainer import TabularExplainer

@@ -81,9 +81,28 @@ VMの種類やノードの設定を行います。下記画面を参考に選択
 
 <img src="./docs/images/aml-compute-add-details.png"><br/>
 
+
+|Item|Value|
+|------------- |----------------|
+|Virtual machine size|_4コア以上のマシンを推奨_|
+|Virtual machine priority| **Dedicated** |
+|Manimum number of nodes|0 (Jobが無い時の稼働ノード数)|
+|Maximum number of nodes|2 (最大稼働ノード数)|
+|Idle seconds before scale down|300 (処理完了からスケールダウンを始めるまでの時間)|
+
+※ Azure Subscription に紐づく Quota の範囲でご利用ください。
+- [Azure Machine Learning の クォータ](https://docs.microsoft.com/ja-JP/azure/machine-learning/service/how-to-manage-quotas) 
+- [Azure のクォータ](https://docs.microsoft.com/ja-JP/azure/azure-subscription-service-limits#azure-machine-learning-service-limits)
+
+<br/>
+
+
 計算環境の作成が無事終わったことを確認します。
 
 <img src="./docs/images/aml-compute-list.png"><br/>
+
+<br/>
+
 
 ### 3. Python SDK 環境
 Python 環境としては、Notebook VM の利用を推奨しています。ただローカルPCの Python 環境からも Azure Machine Learning service にアクセスすることができます。A, B のいずれかの手順を実行してください。
@@ -92,7 +111,7 @@ Python 環境としては、Notebook VM の利用を推奨しています。た�
 
 Notebook VM は、 Azure Machine Learning service が提供するマネージドな Jupyter Notebook / Jupyter Lab 環境です。
 
-自分の Notebook VM を作成する際は、左パネルの **Notebook VM**機能にアクセスし、**New**をクリックします。
+自分の Notebook VM を作成する際は、左パネルの **Notebook VM** にアクセスし、**New**をクリックします。
 <img src="./docs/images/aml-nvm-list.png"><br/>
 
 任意の名称とVMのスペックを選択して、作成を開始します。
@@ -101,9 +120,11 @@ Notebook VM は、 Azure Machine Learning service が提供するマネージド
 |Item|Value|
 |------------- |----------------|
 |Notebook VM Name|_Regionで一意となる名称が必要_|
-|VM  Type|_任意のスペックから選択可能 (CPU,GPU)_|
+|VM  Type|_任意のスペックから選択可能 (CPU,GPU)(4コア以上推奨)_|
 
-Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook にアクセスできることが確認できれば完了です。
+<br/>
+
+5分程待ちます。Status が **Running** になっていることを確認し、**Jupyter** をクリックして、Jupyter Notebook にアクセスできることが確認できれば完了です。
 
 <img src="./docs/images/aml-nvm-created.png"><br/>
 
@@ -160,6 +181,7 @@ Notebook VM には Git がインストール済みのため、その Git コマ�
 Jupyter Notebook の Terminal を開きます。自分の個人フォルダーに移動し、本リポジトリをクローンします。
 
 ```bash
+dir
 cd <個人フォルダ>
 git clone https://github.com/konabuta/DataExplore-Workshop
 ```
@@ -167,9 +189,9 @@ git clone https://github.com/konabuta/DataExplore-Workshop
 
 #### B. ローカル PC の Python 環境
 
-下記のいずれかの方法でローカルPCにインポートします。
+下記のいずれかの手順でローカルPCにコードをインポートします。
 
-A. [Git](https://gitforwindows.org/) or [GitHub Desktop](https://desktop.github.com/) がインストールされている場合は、ローカルPCの作業フォルダにて、本リポジトリをクローン
+A. [Git](https://gitforwindows.org/) or [GitHub Desktop](https://desktop.github.com/) がインストールされている場合は、Gitコマンドで本リポジトリをクローン
 ```bash
 # git コマンドの例
 git clone https://github.com/konabuta/DataExplore-Workshop
@@ -180,9 +202,12 @@ B. 本リポジトリの [Zip ファイル](https://github.com/konabuta/DataExpl
 
 ## Option
 ### Microsoft Interpret ML
+
+注意：ローカルPCの利用を推奨します。クラウド環境でも正常に動くように現在改善中です。
+
 [Microsoft Interpret ML](https://github.com/microsoft/interpret) のライブラリを利用する際には、Azure Machine Learning service とはパッケージの競合を防ぐため、Azure ML service  Python SDK とは別の仮想環境を利用することを推奨します。
 
-1. Anaconda Prompt を開いて、interpretという名前の仮想環境を作成します。
+1. Jupyter Notebook Terminal or Anaconda Prompt を開いて、interpretという名前の仮想環境を作成します。
 
 ```bash
 # New Conda
@@ -207,7 +232,9 @@ conda install notebook ipykernel
 # Jupyter Kernel Attach
 python -m ipykernel install --user --name interpret --display-name interpret
 ```
+
 ```bash
+# Jupyter が既に起動している　or Notebook VM の場合は不要
 # Start Jupyter Notebook
 jupyter notebook
 ```
