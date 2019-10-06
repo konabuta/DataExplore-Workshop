@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="./docs/images/analytics_steps.gif" width = 400><br/>
+<img src="./docs/images/analytics_steps.png" width = 400><br/>
 
 しかしながら、複雑・大量になっているデータに対する探索は非常に困難です。下記のような理由が挙げられます。
 
